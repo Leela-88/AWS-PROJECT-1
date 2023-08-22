@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>
+		ERROR PAGE 
+	</title>
+</head>
+<body>
+  <h2 align="left"> Oops error!</h2>
+</body>
+</html>
