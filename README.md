@@ -97,10 +97,17 @@ hosting(e.g. “index.html”).
 
 ### 2.Click “Add Files” to upload your website files to the bucket and Click ‘Upload’
 
-![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/b0f0fcd6-807f-4f63-b7b0-e163b65433c0)
+### For Example: You can use sample Website "Website" folder contents (provided in this repository).
+
+### index.html
+### error.html
+### images[1.jpg]
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/72e97a31-9a95-4f3d-9abc-fb87a6eb97a7)
 
 
 ![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/75d4267d-dc58-4057-bccd-f68ad3c0ff48)
+
 
 ## STEP 4-CONFIGURE BUCKET PERMISSIONS
 
@@ -120,22 +127,61 @@ hosting(e.g. “index.html”).
 
 {
     "Version": "2012-10-17",
+    
     "Statement": [
+    
         {
             "Sid": "PublicReadGetObject",
+            
             "Effect": "Allow",
+            
             "Principal": "*",
+            
             "Action": [
+            
                 "s3:GetObject"
+                
             ],
+            
             "Resource": [
+            
                 "arn:aws:s3:::Bucket-Name/*"
+                
             ]
+            
         }
+        
     ]
+    
 }
 
+
+
 ![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/45e4739d-25fa-4762-a77e-5d678815fff6)
+
+### 6.Click On “Save” to save the bucket policy
+
+## All the steps have been completed and the website is ready to view
+
+## STEP 5- VIEW THE WEBSITE
+
+### 1.Inorder to viwe the website  Under Buckets, choose the name of your bucket, Choose Properties and At the bottom of the page, under Static website hosting, copy your Bucket website endpoint and paste it in new window
+
+## This is the endpoint URL:
+     ### http://leela-static-website.s3-website.ap-south-1.amazonaws.com
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/d4dae6ed-aba7-444a-a61b-ec98822767b8)
+
+## The website can be viewed and static hosting on AWS using S3 has been completed
+
+# SUMMARY
+
+## Creating, managing, and hosting websites and webpages and sharing data publicly is very important and crucial as this provides the public face of most brands and organizations. Looking at this perspective, AWS has developed a great idea to publicly provide an easy and simple solution for their users to host content using the S3 bucket. 
+
+
+
+
+
 
 
 
