@@ -32,6 +32,10 @@ Step 1 - Create an S3 bucket
 1.Log in to your AWS Management Console and Navigate to the Amazon S3 service
 
 
+
+
+
+
 ![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/aa777a04-7204-4c56-b168-cb8d4128e5ec)
 
 
