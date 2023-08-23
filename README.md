@@ -117,7 +117,7 @@ hosting(e.g. “index.html”).
 
 ![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/87ccb330-eb48-4963-84c6-c9771bbdfb57)
 
-### 3.Here we get 403 forbidden because we did not  allow public access to your bucket.So inorder to give public access we have to configure bucket permissions 
+### 3.Here we get 403 forbidden because we did not  allow public access to the bucket.So inorder to give public access we have to configure bucket permissions 
 
 ### 4.In the bucket properties, go to the “Permissions” tab and Under the “Bucket policy,” click “Edit.”
 
@@ -168,7 +168,7 @@ hosting(e.g. “index.html”).
 ### 1.Inorder to viwe the website  Under Buckets, choose the name of your bucket, Choose Properties and At the bottom of the page, under Static website hosting, copy your Bucket website endpoint and paste it in new window
 
 ## This is the endpoint URL:
-     ### http://leela-static-website.s3-website.ap-south-1.amazonaws.com
+      http://leela-static-website.s3-website.ap-south-1.amazonaws.com
 
 ![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/d4dae6ed-aba7-444a-a61b-ec98822767b8)
 
