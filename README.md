@@ -28,7 +28,7 @@ Amazon CloudFront: You can also use Amazon CloudFront to enable your website to 
 
 # Set-Up Instructions
 
-## Step 1 - Create an S3 bucket
+## Step 1 - CREATE AN S3 BUCKET
 
 ### 1.Log in to your AWS Management Console and Navigate to the Amazon S3 service
 
@@ -62,6 +62,99 @@ Amazon CloudFront: You can also use Amazon CloudFront to enable your website to 
 
 
 ![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/3880ea17-3842-427d-9fbb-485277852d31)
+
+## Step 2- ENABLE STATIC WEBSITE HOSTING
+
+### 1.Once your bucket is created, select it from the list and go to the “Properties” tab
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/acc8a3e6-ef60-42ce-a5a2-295bc46c6bde)
+
+### 2.Scroll down to the “Static website hosting” section and click “Edit.”
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/6e514ede-ea6e-4a1e-a9f6-8b4ab6c45baf)
+
+
+### 3.Select “Enable” for the “Static website hosting” option and Enter the name of your default HTML file which you are going to use for
+hosting(e.g. “index.html”).
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/ca4304d3-ca60-406a-9a8e-43364ff7e62b)
+
+### 4.Here you can also give the Error document that is returned when an error occurs  and Click On “Save” to save the changes
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/10342ae5-c20d-4e23-8ab9-9d664fd1036f)
+
+
+### 5.Now we can see that Static website hosting is Enabled,Now copy the bucket website endpoint.
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/8f89b870-bdcb-4b28-adb2-91d166738719)
+
+## Step 3- UPLOAD THE WEBSITE CONTENT
+
+### 1.In the bucket properties, navigate to the “Object” tab
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/2c294065-332f-47ee-9afa-b1d0781085ed)
+
+
+### 2.Click “Add Files” to upload your website files to the bucket and Click ‘Upload’
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/b0f0fcd6-807f-4f63-b7b0-e163b65433c0)
+
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/75d4267d-dc58-4057-bccd-f68ad3c0ff48)
+
+## STEP 4-CONFIGURE BUCKET PERMISSIONS
+
+### 1.Before Configuring the bucket policy we will see what happend if we do not configure bucket permissions 
+
+### 2.We have uploaded Our website into bucket so now we will check if this website is hosted on S3 or not. For this we have to paste the endpoint URL in new window after we done this it will shows [ 403 Forbidden ].
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/87ccb330-eb48-4963-84c6-c9771bbdfb57)
+
+### 3.Here we get 403 forbidden because we did not  allow public access to your bucket.So inorder to give public access we have to configure bucket permissions 
+
+### 4.In the bucket properties, go to the “Permissions” tab and Under the “Bucket policy,” click “Edit.”
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/aaf47264-9ace-417e-8849-bc9c92f9c5c8)
+
+### 5.Add the following bucket policy, replacing “your-bucket-name” with your actual bucket name:
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::Bucket-Name/*"
+            ]
+        }
+    ]
+}
+
+![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/45e4739d-25fa-4762-a77e-5d678815fff6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
