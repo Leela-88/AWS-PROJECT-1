@@ -28,7 +28,7 @@ Amazon CloudFront: You can also use Amazon CloudFront to enable your website to 
 
 # Set-Up Instructions
 
-Step 1 - Create an S3 bucket
+## Step 1 - Create an S3 bucket
 
 1.Log in to your AWS Management Console and Navigate to the Amazon S3 service
 
