@@ -31,21 +31,30 @@ Step 1 - Create an S3 bucket
 
 1.Log in to your AWS Management Console and Navigate to the Amazon S3 service
 
+
 ![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/aa777a04-7204-4c56-b168-cb8d4128e5ec)
+
 
 2.Click On “Create bucket” to begin creating a new bucket
 
+
 ![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/f4d4f4ac-9f09-4a7b-a4de-993461b61868)
+
 
 3.Provide a unique name for your bucket and choose the region closest to your target audience or your residence region
 
+
 ![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/09223736-62ba-403b-8da0-af3528b1cc7b)
+
 
 4.Uncheck ‘Block all public access’ to make all the objects Public in the bucket and Check the acknowledge box
 
+
 ![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/3f45339b-9aae-42b4-a95e-5e477d83e08f)
 
+
 5.Keep the default settings for the rest of the options and click On “Create” then a pop-up will appear stating that successfully created bucket 
+
 
 ![image](https://github.com/Leela-88/AWS-PROJECT-1/assets/113762845/3880ea17-3842-427d-9fbb-485277852d31)
 
